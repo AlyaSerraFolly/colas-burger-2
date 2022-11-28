@@ -8,5 +8,17 @@
   src: url(../fonts/Hub191Regular.woff2);
 }
 
-h2 {
+@font-face {
+  font-family: "hubScript";
+  src: url(../fonts/Hub191Script.woff2);
+}
+
+@font-face {
+  font-family: "hubRounded";
+  src: url(../fonts/Hub191Rounded.woff2);
+}
+
+@font-face {
+  font-family: "AgrandirRegular";
+  src: url(../fonts/PPAgrandir-TightRegular.woff2);
 }
