@@ -10,6 +10,7 @@
 // ==================================== */
 
 @import "bootstrap/scss/bootstrap-grid";
+@import "fonts.scss";
 
 * {
   box-sizing: border-box;
@@ -112,6 +113,34 @@ h1 {
   top: 0%;
   z-index: 2;
   position: sticky;
+}
+
+.list-animation {
+  background-color: #fff;
+  color: #000;
+  font-family: "hubRegular";
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.list-animation span {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.container-animation-nav {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0);
+  }
+  100% {
+    transform: translate3d(50%, 0);
+  }
 }
 
 /* ---------------------MAIN-------------------- */
