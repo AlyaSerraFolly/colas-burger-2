@@ -54,15 +54,10 @@ video {
 .row > [class^="col-"] {
   padding-top: 12px;
   padding-bottom: 12px;
-  border: 1px solid rgba(86, 61, 124, 0.2);
+  border: 1px solid black;
 }
 
 /* BASE */
-
-img {
-  max-height: auto;
-  max-width: 200px;
-}
 
 h1 {
   font-family: "hubDisplay";
@@ -98,8 +93,10 @@ h1 {
 /* --------------------HEADER------------------ */
 
 .header-logo {
-  max-height: auto;
-  max-width: 604px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* nav */
@@ -115,31 +112,55 @@ h1 {
   position: sticky;
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-header li {
+  margin-right: 30px;
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+}
+
 .list-animation {
   background-color: #fff;
   color: #000;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
   font-family: "hubRegular";
+  font-size: 19px;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
+  line-height: 17px;
+  padding-top: 3px;
 }
 
 .list-animation span {
   display: inline-block;
-  animation: marquee 10s linear infinite;
+  animation: marquee 13s linear infinite;
+  animation-delay: 0s;
+  flex-direction: row-reverse;
 }
 
 .container-animation-nav {
   max-width: 100%;
   overflow: hidden;
+  padding: 0px;
 }
+
+/* .list-animation span {
+  display: inline-block; 
+}*/
 
 @keyframes marquee {
   0% {
-    transform: translate3d(0, 0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(50%, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
@@ -167,14 +188,32 @@ h1 {
 
 @media (min-width: 300px) {
   .header-logo {
-    max-height: auto;
     max-width: 316px;
   }
 }
 
 @media (min-width: 1200px) {
   .header-logo {
-    max-height: auto;
     max-width: 604px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-logo {
+    padding-bottom: 44px;
+    padding-top: 44px;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav,
+  ul {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 300px) {
+  .nav-header {
+    max-height: 59px;
   }
 }
