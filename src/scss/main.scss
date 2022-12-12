@@ -3,6 +3,10 @@
 // ==================================== */
 
 :root {
+  --white: #ffffff;
+  --black: #ffffff;
+  --pink: #ffffff;
+  --green: #ffffff;
 }
 
 /* ====================================
@@ -43,18 +47,14 @@ video {
 }
 
 /* ====================================
-// base rules
+// base rules /// containers 
 // ==================================== */
-
-.row + .row {
-  margin-top: 16px;
-}
 
 .row > .col,
 .row > [class^="col-"] {
   padding-top: 12px;
   padding-bottom: 12px;
-  border: 1px solid black;
+  /* border: 1px solid rgb(202, 202, 202); */
 }
 
 /* BASE */
@@ -90,7 +90,34 @@ h1 {
   font-size: 38px;
 }
 
+.text-information {
+  font-family: "AgrandirRegular";
+  padding: 29.5px 80px 29.5px 80px;
+  padding-right: 301px;
+  font-size: 18px;
+}
+
+.fribourg-animation {
+  background-color: #fff;
+  color: #000;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+  font-size: 19px;
+  padding-top: 3px;
+}
+
+.burgers-animation {
+  background-color: black;
+  color: white;
+  font-size: 38px;
+}
+
 /* --------------------HEADER------------------ */
+
+.container-border-around {
+  border: black solid 1px;
+  border-top: 0px;
+}
 
 .header-logo {
   align-content: center;
@@ -122,19 +149,17 @@ h1 {
   list-style: none;
   text-decoration: none;
   display: inline;
+  text-align: center;
 }
 
 .list-animation {
-  background-color: #fff;
-  color: #000;
-  border-left: solid 1px #000;
-  border-right: solid 1px #000;
   font-family: "hubRegular";
-  font-size: 19px;
-  margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
-  line-height: 17px;
+}
+
+.line-height-header {
+  line-height: 11px;
   padding-top: 3px;
 }
 
@@ -149,6 +174,15 @@ h1 {
   max-width: 100%;
   overflow: hidden;
   padding: 0px;
+}
+
+/*.i {
+  padding-right: 90px;
+}*/
+
+.solid-nav {
+  font-size: 10px;
+  display: inline;
 }
 
 /* .list-animation span {
