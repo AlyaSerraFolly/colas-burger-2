@@ -105,15 +105,6 @@ h1 {
   margin: 20px;
 }
 
-.burgers-animation {
-  background-color: black;
-  color: white;
-  font-size: 38px;
-  font-family: "hubDisplay";
-  line-height: 30px;
-  padding-top: 9px;
-}
-
 /* --------------------HEADER------------------ */
 
 .container-border-around {
@@ -173,10 +164,24 @@ h1 {
   overflow: hidden;
 }
 
-span {
+.animation-box {
+  border-left: solid 3px;
+}
+
+.burgers-animation {
+  background-color: black;
+  color: white;
+  font-size: 38px;
+  font-family: "hubDisplay";
+  padding: 10px 10px 0px 10px;
+}
+
+.anim-header {
   line-height: 11px;
-  padding-top: 3px;
+  padding: 10px 10px 8px 10px;
   font-family: "hubRegular";
+  font-size: 20px;
+  padding-left: 5px;
 }
 
 .left-animation {
@@ -215,18 +220,10 @@ span {
   overflow: hidden;
 }
 
-/*.i {
-  padding-right: 90px;
-}*/
-
 .solid-nav {
   font-size: 10px;
   display: inline;
 }
-
-/* .list-animation span {
-  display: inline-block; 
-}*/
 
 /* ---------------------MAIN-------------------- */
 
@@ -257,11 +254,6 @@ span {
 }
 
 /* -------------------ANIMATION----------------- */
-
-.animation-box {
-  border-left: solid 3px var(--white);
-}
-
 /* -------------------MEDIAQUERIES-------------- */
 
 @media (min-width: 300px) {
