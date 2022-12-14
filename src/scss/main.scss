@@ -25,6 +25,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -122,7 +123,7 @@ h1 {
 
 /* IMG */
 
-.header-logo {
+.main-logo {
   align-content: center;
   display: block;
   margin-left: auto;
@@ -135,28 +136,36 @@ h1 {
 
 /* nav */
 
-.nav-header {
-  background-color: rgb(233, 102, 95);
-  font-family: "hubDisplay";
-  font-size: 18px;
-  color: white;
-  text-align: center;
-  top: 0%;
+.header {
+  top: 0px;
   z-index: 2;
   position: sticky;
 }
 
-.nav {
-  display: flex;
-  justify-content: center;
+.nav-logo {
+  text-align: center;
+  width: 100px;
 }
 
-.nav-header li {
+.nav-header {
+  font-family: "hubDisplay";
+  font-size: 18px;
+  color: var(--white);
+}
+
+.nav-header-container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--pink);
+}
+
+.nav-header a {
   margin-right: 30px;
-  list-style: none;
-  text-decoration: none;
   display: inline;
   text-align: center;
+  text-decoration: none;
+  margin: 0 30px;
+  line-height: 50px;
 }
 
 .list-animation {
@@ -164,23 +173,30 @@ h1 {
   overflow: hidden;
 }
 
-.line-height-header {
+span {
   line-height: 11px;
   padding-top: 3px;
   font-family: "hubRegular";
 }
 
-.list-animation span {
+.left-animation {
+  animation: left 13s linear infinite;
+}
+
+.right-animation {
+  animation: right 13s linear infinite;
+}
+
+.line-height-header {
   display: inline-block;
-  animation: marquee 13s linear infinite;
-  animation-delay: 0s;
   flex-direction: row-reverse;
+  white-space: nowrap;
+  animation-timing-function: linear;
 }
 
 .container-animation-nav {
   max-width: 100%;
   overflow: hidden;
-  padding: 0px;
 }
 
 /*.i {
@@ -196,12 +212,21 @@ h1 {
   display: inline-block; 
 }*/
 
-@keyframes marquee {
+@keyframes right {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translate(0, 0);
   }
   100% {
-    transform: translate3d(-50%, 0, 0);
+    transform: translate(50%, 0);
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
   }
 }
 
