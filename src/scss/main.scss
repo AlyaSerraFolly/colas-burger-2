@@ -121,8 +121,8 @@ h1 {
   margin-right: auto;
 }
 
-.food-truck {
-  width: 200px;
+.img-illustration {
+  width: 400px;
 }
 
 /* nav */
@@ -208,7 +208,7 @@ h1 {
 }
 
 .olive-animation-container {
-  overflow: hidden;
+  padding: 0px;
 }
 
 .olive-animation {
@@ -273,16 +273,37 @@ h1 {
   box-sizing: border-box;
 }
 
+.container-reservation {
+  display: flex;
+}
+
+.findmore-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.findmore-button {
+  width: 200px;
+  border: 1px solid var(--white);
+  color: var(--white);
+  text-align: center;
+  padding: 7px;
+  font-size: 40px;
+  font-family: "hubRegular";
+}
+
+.reservation
 /* --------------------FOOTER------------------- */
 
 .footer-style li {
-  color: white;
+  color: var(--white);
   font-family: "AgrandirRegular";
 }
 
 .footer-style,
 .a {
-  color: white;
+  color: var(--white);
   font-family: "hubDisplay";
 }
 
