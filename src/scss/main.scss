@@ -100,6 +100,10 @@ h1 {
   color: #000;
 }
 
+.title-left {
+  margin: 20px;
+}
+
 .burgers-animation {
   background-color: black;
   color: white;
@@ -212,10 +216,21 @@ h1 {
   margin: 10px;
 }
 
+.container-burger-title {
+  box-sizing: border-box;
+}
+
 /* --------------------FOOTER------------------- */
 
-.adress {
+.footer-style li {
   color: white;
+  font-family: "AgrandirRegular";
+}
+
+.footer-style,
+.a {
+  color: white;
+  font-family: "hubDisplay";
 }
 
 /* -------------------ANIMATION----------------- */
