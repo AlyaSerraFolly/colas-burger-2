@@ -213,21 +213,20 @@ h1 {
 
 .olive-animation {
   height: 120px;
-  display: flex;
-  justify-content: space-around;
   background-size: contain;
-  overflow: hidden;
-  background-repeat: repeat;
-  background-image: url("../img/olive_illustration.png");
-  animation: right 13s linear infinite;
+  background-repeat: repeat-x;
+  background-image: url("../img/olive-illustration.jpg");
+  animation: background-animation 13s linear infinite;
 }
 
-@keyframes right {
-  0% {
-    transform: translate(0, 0);
+@keyframes background-animation {
+  from {
+    background-size: repeat-x;
+    background-position: (0% 0%);
   }
-  100% {
-    transform: translate(50%, 0);
+  to {
+    background-size: repeat-x;
+    background-position: (-100%);
   }
 }
 
