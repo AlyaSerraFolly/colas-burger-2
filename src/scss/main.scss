@@ -4,7 +4,7 @@
 
 :root {
   --white: #ffffff;
-  --black: #ffffff;
+  --black: #000000;
   --pink: #ff6852;
   --green: #28926a;
   --brown: #664337;
@@ -70,7 +70,7 @@ h1 {
 }
 
 .dark {
-  background-color: #000;
+  background-color: var(--black);
 }
 
 .ligature-text {
@@ -168,20 +168,30 @@ h1 {
   border-left: solid 3px;
 }
 
+.reservation-animation {
+  background-color: var(--green);
+  color: white;
+  font-size: 38px;
+  font-family: "hubScript";
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .burgers-animation {
   background-color: black;
   color: white;
   font-size: 38px;
   font-family: "hubDisplay";
-  padding: 10px 10px 0px 10px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .anim-header {
   line-height: 11px;
-  padding: 10px 10px 8px 10px;
+  padding: 10px 10px 7px 10px;
   font-family: "hubRegular";
   font-size: 20px;
-  padding-left: 5px;
 }
 
 .left-animation {
