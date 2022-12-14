@@ -293,7 +293,19 @@ h1 {
   font-family: "hubRegular";
 }
 
-.reservation
+/* ---------------------TABLE-------------------- */
+
+.table-reservation .table-reservation .t1 {
+  border: 1px solid var(--white);
+}
+
+.table-reservation,
+.t2 td,
+.table-reservation,
+.t2 th {
+  border: 1px solid var(--white);
+}
+
 /* --------------------FOOTER------------------- */
 
 .footer-style li {
