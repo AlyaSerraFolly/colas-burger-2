@@ -168,7 +168,7 @@ h1 {
   line-height: 50px;
 }
 
-.list-animation {
+.list-animation-container {
   white-space: nowrap;
   overflow: hidden;
 }
@@ -180,18 +180,34 @@ span {
 }
 
 .left-animation {
+  display: flex;
+  flex-direction: row;
   animation: left 13s linear infinite;
 }
 
 .right-animation {
+  display: flex;
+  flex-direction: row-reverse;
+  white-space: nowrap;
   animation: right 13s linear infinite;
 }
 
-.line-height-header {
-  display: inline-block;
-  flex-direction: row-reverse;
-  white-space: nowrap;
-  animation-timing-function: linear;
+@keyframes right {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50%, 0);
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
 }
 
 .container-animation-nav {
@@ -211,24 +227,6 @@ span {
 /* .list-animation span {
   display: inline-block; 
 }*/
-
-@keyframes right {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(50%, 0);
-  }
-}
-
-@keyframes left {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50%, 0);
-  }
-}
 
 /* ---------------------MAIN-------------------- */
 
@@ -261,6 +259,7 @@ span {
 /* -------------------ANIMATION----------------- */
 
 .animation-box {
+  border-left: solid 3px var(--white);
 }
 
 /* -------------------MEDIAQUERIES-------------- */
