@@ -159,16 +159,11 @@ h1 {
   line-height: 50px;
 }
 
-.list-animation-container {
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .animation-box {
   border-left: solid 3px;
 }
 
-.reservation-animation {
+.ligature-animation {
   background-color: var(--green);
   color: white;
   font-size: 38px;
@@ -187,11 +182,22 @@ h1 {
   padding-right: 15px;
 }
 
+.regular-animation {
+  background-color: black;
+  color: white;
+  font-size: 38px;
+  font-family: "hubRegular";
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .anim-header {
   line-height: 11px;
   padding: 10px 10px 7px 10px;
   font-family: "hubRegular";
   font-size: 20px;
+  background-color: var(--white);
 }
 
 .left-animation {
@@ -248,9 +254,10 @@ h1 {
   }
 }
 
-.container-animation-nav {
+.container-animation {
   max-width: 100%;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .solid-nav {
@@ -273,10 +280,6 @@ h1 {
   box-sizing: border-box;
 }
 
-.container-reservation {
-  display: flex;
-}
-
 .findmore-button-container {
   display: flex;
   justify-content: center;
@@ -293,17 +296,38 @@ h1 {
   font-family: "hubRegular";
 }
 
+.container-schedule {
+  display: flex;
+}
+
 /* ---------------------TABLE-------------------- */
 
-.table-reservation .table-reservation .t1 {
-  border: 1px solid var(--white);
+.container-reservation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
+
+.table-reservation {
+  border-collapse: collapse;
+  width: 400px;
+}
+
+/* .table-reservation .t1 {
+  border: 1px solid var(--white);
+} */
 
 .table-reservation,
 .t2 td,
 .table-reservation,
-.t2 th {
-  border: 1px solid var(--white);
+.t2 th,
+td {
+  border: 1px solid var(--black);
+  font-size: 30px;
+  padding: 7px;
+  padding-top: 11px;
+  font-family: "hubRegular";
+  line-height: 25px;
 }
 
 /* --------------------FOOTER------------------- */
