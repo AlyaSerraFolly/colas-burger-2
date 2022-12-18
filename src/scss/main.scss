@@ -62,14 +62,6 @@ video {
 
 /* BASE */
 
-h1 {
-  font-family: "hubDisplay";
-  font-size: 41px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 37px;
-}
-
 .dark {
   background-color: var(--black);
 }
@@ -104,13 +96,16 @@ h1 {
 
 .title-left {
   padding-left: 45px;
-  margin: 10px;
+  margin: 20px;
 }
 
 p {
   padding-top: 25px;
 }
 
+.food-truck {
+  margin-left: 45px;
+}
 /* --------------------HEADER------------------ */
 
 .container-border-around {
@@ -137,7 +132,7 @@ p {
 
 /* nav */
 
-.header {
+header {
   top: 0px;
   z-index: 2;
   position: sticky;
@@ -145,12 +140,41 @@ p {
 
 .nav-logo {
   text-align: center;
-  width: 100px;
+  width: 150px;
+  padding: 10px;
 }
 
+.container-nav-flex {
+  display: flex;
+  justify-content: start;
+  width: auto;
+}
+
+.container-icon {
+  position: fixed;
+  top: 35px;
+  right: 220px;
+}
+
+.container-icon i {
+  padding-left: 30px;
+  vertical-align: bottom;
+  max-width: 20px;
+  font-size: 14px;
+}
+
+/* .icone-container {
+  display: flex;
+  padding-left: 120px;
+  padding-top: 15px;
+  vertical-align: bottom;
+} */
+
 .nav-header {
+  display: flex;
+  flex-direction: row;
   font-family: "hubDisplay";
-  font-size: 18px;
+  font-size: 24px;
   color: var(--white);
 }
 
@@ -162,11 +186,11 @@ p {
 
 .nav-header a {
   margin-right: 30px;
-  display: inline;
-  text-align: center;
+  flex-direction: row;
   text-decoration: none;
   margin: 0 30px;
   line-height: 50px;
+  vertical-align: bottom;
 }
 
 .animation-box {
@@ -288,13 +312,35 @@ p {
   background-color: var(--green);
 }
 
-.burger-order {
-  background-color: white;
-  padding: 10px;
+h1 {
+  font-family: "hubDisplay";
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 37px;
 }
 
-.container-burger-title {
-  box-sizing: border-box;
+h3 {
+  font-size: 30px;
+  font-family: "hubRegular";
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: "hubDisplay";
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 48px;
+}
+
+.our-burger .container-text-article {
+  width: 343px;
+}
+
+.recipes .container-text-article {
+  width: 190px;
+  margin-left: 180px;
 }
 
 .findmore-button-container {
@@ -326,15 +372,21 @@ p {
   padding-top: 10px;
 }
 
-.container-article {
-  display: flex;
-  flex-direction: column;
+.large-image {
+  height: 200px;
 }
 
 .container-article {
   background-size: auto;
   background-repeat: no-repeat;
-  height: 200px;
+  background-color: var(--white);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.recipes-text-button {
+  padding-left: 90px;
 }
 
 .burger-recipes {
@@ -342,17 +394,13 @@ p {
   justify-content: center;
 }
 
-.container-article {
-  margin-bottom: 60px;
-}
-
 .container-text-article {
   height: 60px;
   padding: 10px;
   border-bottom-right-radius: 25px;
   display: flex;
-  width: 343px;
   margin-top: 200px;
+  justify-content: space-between;
 }
 
 .article-ourburger-title {
@@ -381,7 +429,7 @@ p {
 }
 
 .arrow-right {
-  padding-left: 90px;
+  margin-right: 10px;
   font-size: 40px;
 }
 
@@ -395,6 +443,10 @@ p {
 
 .krusty-burger {
   background-image: url("../img/chiken_burger.webp");
+}
+
+.double-beef {
+  background-image: url("../img/doublebeef_image.webp");
 }
 
 /* ---------------------TABLE-------------------- */
@@ -421,7 +473,7 @@ p {
   display: flex;
   flex-direction: column;
   padding-top: 70px;
-  padding-left: 45px;
+  padding-left: 66px;
   padding-bottom: 50px;
 }
 
@@ -506,6 +558,7 @@ td {
 
 .container-footer-style {
   padding-bottom: 30px;
+  margin: 45px;
 }
 
 .footer-style,
@@ -519,15 +572,17 @@ td {
 
 @media (min-width: 300px) {
   h1 {
-    font-size: 46px;
+    font-size: 90px;
     letter-spacing: 0;
-    line-height: 46px;
+    line-height: 74px;
   }
 }
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: 60px;
+    font-size: 88px;
+    line-height: 70px;
+    letter-spacing: 0;
   }
 }
 
@@ -559,6 +614,6 @@ td {
 
 @media (min-width: 300px) {
   .nav-header {
-    max-height: 59px;
+    max-height: 125px;
   }
 }

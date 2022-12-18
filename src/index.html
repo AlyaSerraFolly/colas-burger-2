@@ -15,15 +15,25 @@
       <div class="container">
         <div class="row">
           <div class="col-12 nav-header-container nav-header">
-            <nav>
-              <a href="#burgers">burgers</a>
-              <a href="#reservation">reservation</a>
-              <img class="nav-logo" src="img/logo-white.svg" alt="white-logo" />
-              <a href="#recipes">recipes</a>
-              <a class="contact-margin-nav" href="#contact">contact</a>
-            </nav>
-            <i class="fa-solid solid-nav fa-magnifying-glass"></i>
-            <i class="fa-solid solid-nav fa-user"></i>
+            <div class="container-nav-flex">
+              <nav>
+                <a href="#burgers">burgers</a>
+                <a href="#reservation">reservation</a>
+                <img
+                  class="nav-logo"
+                  src="img/logo-white.svg"
+                  alt="white-logo"
+                />
+                <a href="#recipes">recipes</a>
+                <a class="contact-margin-nav" href="#contact">contact</a>
+                <nav class="container-icon">
+                  <i
+                    class="fa-solid solid-nav fa-magnifying-glass icone-header"
+                  ></i>
+                  <i class="fa-solid solid-nav fa-user"></i>
+                </nav>
+              </nav>
+            </div>
           </div>
           <div class="container-border-around container-animation">
             <div class="right-animation">
@@ -85,9 +95,9 @@
         </div>
         <div class="row">
           <div class="col-12 col-xl-5 container-border-around">
-            <h1 class="title-left dark-title-text">
+            <h2 class="title-left dark-title-text">
               From<br />Fribourg <br />with love!
-            </h1>
+            </h2>
           </div>
           <div class="col-12 col-xl-7 container-border-around">
             <p class="text-information title-left">
@@ -123,16 +133,16 @@
               <span class="animation-box burgers-animation"> burger </span>
             </div>
           </div>
-          <div class="col-12 col-md-3 col-xl-3 our-burger">
+          <div class="col-12 col-md-3 col-xl-4 our-burger">
             <h1 class="title-left light-text" id="burgers">Our<br />burger</h1>
           </div>
-          <div class="col-12 col-md-9 col-xl-9 our-burger">
+          <div class="col-12 col-md-9 col-xl-8 our-burger">
             <p class="ligature-text light-text title-left">
               Super Tasty <br />& Super Fresh!
             </p>
           </div>
-          <div class="col-12 col-xl-4 burger-recipes">
-            <article class="container-article cheese-burger">
+          <div class="col-12 col-xl-4 burger-recipes our-burger">
+            <article class="container-article large-image cheese-burger">
               <div class="container-text-article green-article">
                 <a class="article-ourburger-title">Cheese-burger</a>
                 <i
@@ -141,8 +151,8 @@
               </div>
             </article>
           </div>
-          <div class="col-12 col-xl-4 burger-recipes">
-            <article class="container-article bacon-burger">
+          <div class="col-12 col-xl-4 burger-recipes our-burger">
+            <article class="container-article large-image bacon-burger">
               <div class="container-text-article pink-article">
                 <a class="article-ourburger-title">beef-burger</a>
                 <i
@@ -151,8 +161,8 @@
               </div>
             </article>
           </div>
-          <div class="col-12 col-xl-4 burger-recipes">
-            <article class="container-article krusty-burger">
+          <div class="col-12 col-xl-4 burger-recipes our-burger">
+            <article class="container-article large-image krusty-burger">
               <div class="container-text-article brown-article">
                 <a class="article-ourburger-title">crusty-crab</a>
                 <i
@@ -267,10 +277,9 @@
             </p>
           </div>
           <div class="col-12 col-sm-12 col-xl-4 burger-order">
-            <img src="img/doublebeef_image.webp" alt="double-beef-burger" />
-          </div>
-          <div class="col-12 col-sm-12 col-xl-4 burger-order">
-            <img src="img/chilicheese.webp" alt="chili-éburger" />
+            <div class="container-order">
+              <img src="img/chilicheese.webp" alt="chili-éburger" />
+            </div>
           </div>
           <div class="col-12 col-sm-12 col-xl-4 burger-order">
             <img src="img/footletuce_image.webp" alt="footletuce-burger" />
@@ -458,10 +467,10 @@
     <footer>
       <div class="container">
         <div class="row dark">
-          <div class="col-12">
+          <div class="col-12 footer">
             <div class="container-footer-style">
               <div class="footer-style adress">
-                <h2>Adress</h2>
+                <h3>Adress</h3>
                 <ul>
                   <li>cola's burger</li>
                   <li>Rue de lausanne 24</li>
@@ -472,7 +481,7 @@
             </div>
             <div class="container-footer-style">
               <div class="footer-style adress">
-                <h2>Schedule</h2>
+                <h3>Schedule</h3>
                 <ul>
                   <li>7/7</li>
                   <li>11 AM - 8 PM</li>
@@ -481,12 +490,12 @@
             </div>
             <div class="container-footer-style">
               <div class="footer-style adress">
-                <h2>contact</h2>
+                <h3>contact</h3>
               </div>
             </div>
             <div class="container-footer-style">
               <div class="footer-style adress">
-                <h2>faq</h2>
+                <h3>faq</h3>
               </div>
             </div>
             <div class="container-footer-style">
