@@ -107,6 +107,10 @@ h1 {
   margin: 10px;
 }
 
+p {
+  padding-top: 25px;
+}
+
 /* --------------------HEADER------------------ */
 
 .container-border-around {
@@ -176,6 +180,7 @@ h1 {
   font-family: "hubScript";
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 8px;
 }
 
 .burgers-animation {
@@ -304,6 +309,7 @@ h1 {
   color: var(--white);
   text-align: center;
   padding: 7px;
+  padding-top: 15px;
   font-size: 40px;
   font-family: "hubRegular";
 }
@@ -318,6 +324,77 @@ h1 {
 
 .partner-title h1 {
   padding-top: 10px;
+}
+
+.container-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-article {
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.burger-recipes {
+  display: flex;
+  justify-content: center;
+}
+
+.container-article {
+  margin-bottom: 60px;
+}
+
+.container-text-article {
+  height: 60px;
+  padding: 10px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  width: 343px;
+  margin-top: 200px;
+}
+
+.article-ourburger-title {
+  padding-top: 3px;
+  margin-left: 6px;
+}
+
+.green-article {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.brown-article {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.pink-article {
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+.article-ourburger-title {
+  font-size: 35px;
+  font-family: "hubRegular";
+}
+
+.arrow-right {
+  padding-left: 90px;
+  font-size: 40px;
+}
+
+.cheese-burger {
+  background-image: url("../img/cheese_burger_image.webp");
+}
+
+.bacon-burger {
+  background-image: url("../img/bacon_burger_image.webp");
+}
+
+.krusty-burger {
+  background-image: url("../img/chiken_burger.webp");
 }
 
 /* ---------------------TABLE-------------------- */
