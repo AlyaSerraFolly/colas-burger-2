@@ -71,15 +71,29 @@ video {
   font-size: 46px;
   letter-spacing: 0;
   line-height: 35px;
+  padding-top: 63px;
 }
 
 .ligature-text-tiny {
   font-size: 38px;
 }
 
+.ligature-dark {
+  padding-top: 80px;
+}
+
 .text-information {
   font-family: "AgrandirRegular";
   font-size: 18px;
+}
+
+.recipes-title {
+  font-family: "HubRegular";
+  font-size: 35px;
+}
+
+.green-title {
+  margin-top: 105px;
 }
 
 .dark-text {
@@ -94,10 +108,6 @@ video {
   color: #000;
 }
 
-.title-left-second {
-  padding-left: 130px;
-}
-
 .title-left {
   padding-left: 45px;
   margin: 20px;
@@ -108,7 +118,7 @@ video {
 }
 
 .container-p-last {
-  padding-top: 19%;
+  margin-top: 120px;
   width: 470px;
 }
 
@@ -433,10 +443,17 @@ h2 {
   height: 200px;
 }
 
+.container-article-receipes {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  margin-top: 104px;
+  padding-top: 10px;
+  border-bottom-right-radius: 20px;
+}
+
 .container-article {
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-color: var(--white);
+  height: 200px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   margin-bottom: 60px;
@@ -488,6 +505,27 @@ h2 {
 .arrow-right {
   margin-right: 10px;
   font-size: 40px;
+}
+
+.our-receipes-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-order {
+  display: flex;
+}
+
+.container-recipes-article-text {
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 20px;
+}
+
+.container-recipes-article-text .recipes-title,
+.recipes-text-container {
+  color: var(--black);
+  padding: 10px;
 }
 
 .cheese-burger {
@@ -558,6 +596,11 @@ h2 {
 .reservation-time {
   width: 190px;
   text-align: center;
+}
+
+.title-left-second {
+  padding-top: 30px;
+  padding-left: 130px;
 }
 
 .reservation-time-medium {
@@ -668,13 +711,62 @@ i {
   .container-p,
   .container-p-last,
   .container-reservation,
-  .img-illustration {
+  .img-illustration,
+  .container-ligature-second {
     text-align: left;
     margin: 5px;
+    width: 340px;
     padding: 0px;
-    width: 380px;
     align-items: center;
     display: flex;
+  }
+}
+
+@media (max-width: 460px) {
+  .burger-media,
+  h1 {
+    font-size: 100px;
+    line-height: 80px;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 460px) {
+  .container-p,
+  .container-p-header,
+  .container-p-last,
+  .container-ligature-first,
+  .container-ligature-second {
+    padding-top: 0px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 360px) {
+  .burger-boy {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-logo {
+    align-items: center;
+  }
+}
+
+@media (min-width: 360px) {
+  .container-reservation {
+    padding-left: 0px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .title-left {
+    padding-left: 0px;
+    margin: 10px;
   }
 }
 
@@ -722,7 +814,7 @@ i {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 660px) {
   nav,
   ul {
     visibility: hidden;
@@ -757,5 +849,14 @@ i {
     padding: 0px;
     margin: 10px;
     flex-direction: row;
+  }
+}
+
+@media (max-width: 900px) {
+  .title-left-second,
+  .container-p {
+    padding-top: 0px;
+    padding-left: 10px;
+    margin: 0px;
   }
 }
