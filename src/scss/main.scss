@@ -57,7 +57,7 @@ video {
 .row > [class^="col-"] {
   padding-top: 12px;
   padding-bottom: 12px;
-  border: 1px solid rgb(202, 202, 202);
+  /* border: 1px solid rgb(202, 202, 202); */
 }
 
 /* BASE */
@@ -94,13 +94,36 @@ video {
   color: #000;
 }
 
+.title-left-second {
+  padding-left: 130px;
+}
+
 .title-left {
   padding-left: 45px;
   margin: 20px;
 }
+.container-p {
+  padding-top: 20%;
+  width: 470px;
+}
 
-p {
-  padding-top: 25px;
+.container-p-last {
+  padding-top: 32%;
+  width: 470px;
+}
+
+.container-ligature-second {
+  padding-top: 10%;
+}
+
+.container-ligature-first {
+  padding-top: 7%;
+}
+
+.container-p-header {
+  padding-top: 3.5%;
+  width: 470px;
+  word-wrap: break-word;
 }
 
 .food-truck {
@@ -108,9 +131,27 @@ p {
 }
 /* --------------------HEADER------------------ */
 
-.container-border-around {
-  border: black solid 1px;
+.container-border-around-dark {
+  border: solid 1px var(--black);
   border-top: 0px;
+}
+
+.container-border-around-light {
+  border: solid 1px var(--white);
+  border-top: 0px;
+}
+
+.border-top {
+  border-top: solid 1px var(--white);
+  border-bottom: solid 1px var(--white);
+}
+
+.border-right {
+  border-right: solid 1px var(--black);
+}
+
+.border-left {
+  border-right: solid 1px var(--white);
 }
 
 /* IMG */
@@ -182,6 +223,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: var(--pink);
+  border-bottom: black 1px solid;
 }
 
 .nav-header a {
@@ -361,6 +403,7 @@ h2 {
 }
 
 .container-schedule {
+  padding: 25px;
   display: flex;
 }
 
@@ -557,14 +600,19 @@ td {
 }
 
 .container-footer-style {
-  padding-bottom: 30px;
-  margin: 45px;
+  margin: 35px;
+  padding-left: 25px;
 }
 
 .footer-style,
-.a {
+h3 {
   color: var(--white);
   font-family: "hubDisplay";
+}
+
+.copyright-message {
+  color: rgb(63, 63, 63);
+  font-family: "AgrandirRegular";
 }
 
 /* -------------------ANIMATION----------------- */
@@ -615,5 +663,14 @@ td {
 @media (min-width: 300px) {
   .nav-header {
     max-height: 125px;
+  }
+}
+
+@media (max-width: 460px) {
+  .h2,
+  .img-illustration,
+  .title-left {
+    padding-left: 0px;
+    margin-left: 5px;
   }
 }
