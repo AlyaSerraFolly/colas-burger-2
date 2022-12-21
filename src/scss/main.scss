@@ -90,6 +90,7 @@ video {
 .recipes-title {
   font-family: "HubRegular";
   font-size: 35px;
+  padding-top: 10px;
 }
 
 .green-title {
@@ -109,7 +110,7 @@ video {
 }
 
 .title-left {
-  padding-left: 45px;
+  /* padding-left: 45px; */
   margin: 20px;
 }
 .container-p {
@@ -426,6 +427,11 @@ h2 {
   font-family: "hubRegular";
 }
 
+.burger-order {
+  display: flex;
+  justify-content: center;
+}
+
 .container-schedule {
   padding: 25px;
   display: flex;
@@ -443,13 +449,26 @@ h2 {
   height: 200px;
 }
 
+.footletuce {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  padding-top: 6px;
+  padding-left: 6px;
+  border-bottom-right-radius: 20px;
+  height: 55px;
+}
+
 .container-article-receipes {
   display: flex;
   flex-direction: row;
   width: 200px;
-  margin-top: 104px;
-  padding-top: 10px;
+  margin-top: 25px;
+  padding-top: 6px;
+  padding-left: 6px;
   border-bottom-right-radius: 20px;
+  height: 55px;
 }
 
 .container-article {
@@ -507,13 +526,20 @@ h2 {
   font-size: 40px;
 }
 
+.recipes-arrow {
+  padding-left: 77px;
+  margin-top: 1px;
+}
+
 .our-receipes-container {
   display: flex;
   flex-direction: row;
+  margin-bottom: 50px;
 }
 
 .container-order {
   display: flex;
+  height: 200px;
 }
 
 .container-recipes-article-text {
@@ -525,7 +551,21 @@ h2 {
 .container-recipes-article-text .recipes-title,
 .recipes-text-container {
   color: var(--black);
-  padding: 10px;
+  padding-left: 15px;
+  margin-bottom: 0;
+  width: 140px;
+}
+
+.container-recipes-article-text .recipes-title,
+.recipes-text-container {
+  color: var(--black);
+  padding-left: 15px;
+  margin-bottom: 0;
+  width: 140px;
+}
+
+.recipes-image {
+  height: 228px;
 }
 
 .cheese-burger {
@@ -551,12 +591,6 @@ h2 {
   border: solid 1px var(--white);
   font-family: "hubRegular";
   line-height: 25px;
-}
-
-.container-schedule {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 .schedule-time {
@@ -672,8 +706,7 @@ h3 {
   font-family: "AgrandirRegular";
 }
 
-.picto-footer,
-i {
+.picto-footer i {
   padding-right: 20px;
   color: var(--white);
   font-size: 32px;
