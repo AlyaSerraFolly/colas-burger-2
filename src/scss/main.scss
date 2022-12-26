@@ -165,6 +165,14 @@ video {
   border-right: solid 1px var(--white);
 }
 
+.border-left-dark {
+  border-left: solid 1px var(--black);
+}
+
+.border {
+  border: solid 1px var(--black);
+}
+
 /* IMG */
 
 .main-logo {
@@ -180,6 +188,11 @@ video {
 
 .burger-boy {
   margin: 10px;
+}
+
+.burger-boy-container {
+  display: flex;
+  justify-content: center;
 }
 
 /* nav */
@@ -379,7 +392,8 @@ h1 {
   font-family: "hubDisplay";
   font-weight: 700;
   letter-spacing: 0;
-  line-height: 37px;
+  line-height: 72px;
+  font-size: 88px;
 }
 
 h3 {
@@ -766,6 +780,17 @@ h3 {
   }
 }
 
+@media (max-width: 460px) {
+  .burger-media,
+  h1 {
+    font-size: 100px;
+    line-height: 80px;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 20px;
+  }
+}
+
 @media (min-width: 460px) {
   .container-p,
   .container-p-header,
@@ -777,9 +802,10 @@ h3 {
   }
 }
 
-@media (min-width: 360px) {
-  .burger-boy {
-    margin-left: 10%;
+@media (min-width: 1000px) {
+  .our-receipes-container {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -793,6 +819,8 @@ h3 {
   .container-reservation {
     padding-left: 0px;
     align-items: center;
+    padding-bottom: 0px;
+    padding-top: 30px;
   }
 }
 
@@ -882,6 +910,15 @@ h3 {
     padding: 0px;
     margin: 10px;
     flex-direction: row;
+  }
+}
+
+@media (max-width: 900px) {
+  .title-left-second,
+  .container-p {
+    padding-top: 0px;
+    padding-left: 10px;
+    margin: 0px;
   }
 }
 
