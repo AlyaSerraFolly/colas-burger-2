@@ -71,7 +71,6 @@ video {
   font-size: 46px;
   letter-spacing: 0;
   line-height: 35px;
-  padding-top: 63px;
 }
 
 .ligature-text-tiny {
@@ -113,18 +112,18 @@ video {
   /* padding-left: 45px; */
   margin: 20px;
 }
+
+.title-left-first {
+  padding-left: 130px;
+}
+
 .container-p {
-  padding-top: 20%;
   width: 470px;
 }
 
 .container-p-last {
   margin-top: 120px;
   width: 470px;
-}
-
-.container-ligature-second {
-  padding-top: 10%;
 }
 
 .container-ligature-first {
@@ -255,7 +254,7 @@ header {
   flex-direction: row;
   text-decoration: none;
   margin: 0 30px;
-  line-height: 50px;
+  line-height: 40px;
   vertical-align: bottom;
 }
 
@@ -439,6 +438,13 @@ h2 {
   padding-top: 15px;
   font-size: 40px;
   font-family: "hubRegular";
+  cursor: pointer;
+}
+
+.findmore-button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transition: 250ms linear;
 }
 
 .burger-order {
@@ -560,14 +566,6 @@ h2 {
   background-color: white;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 20px;
-}
-
-.container-recipes-article-text .recipes-title,
-.recipes-text-container {
-  color: var(--black);
-  padding-left: 15px;
-  margin-bottom: 0;
-  width: 140px;
 }
 
 .container-recipes-article-text .recipes-title,
@@ -725,208 +723,54 @@ h3 {
   color: var(--white);
   font-size: 32px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 /* -------------------ANIMATION----------------- */
+
+.underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-animation::before {
+  content: "";
+  height: 2px;
+  width: 0px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.25s ease-out;
+}
+
+.underline-animation:hover::before {
+  content: "";
+  width: 100%;
+}
+
 /* -------------------MEDIAQUERIES-------------- */
 
-@media (max-width: 460px) {
-  h1 {
-    font-size: 90px;
-    letter-spacing: 0;
-    line-height: 74px;
-    padding-top: 20px;
+@media (max-width: 900px) {
+  .container-p-header {
+    padding: 0px;
     margin: 0px;
+    width: 690px;
   }
 }
 
-@media (max-width: 460px) {
-  div,
-  .row-dark {
-    align-items: center;
-    justify-content: center;
+@media (max-width: 900px) {
+  .title-left-first,
+  .title-left-second {
+    padding-left: 30px;
+    padding-top: 0px;
   }
 }
 
-@media (max-width: 460px) {
-  p,
-  .element.style,
-  .title-left-second,
-  .title-left,
-  .our-burger,
-  .burger-recipes,
-  .container-p-header,
+@media (max-width: 900px) {
   .container-p,
-  .container-p-last,
-  .container-reservation,
-  .img-illustration,
-  .container-ligature-second {
-    text-align: left;
-    margin: 5px;
-    width: 340px;
-    padding: 0px;
-    align-items: center;
-    display: flex;
-  }
-}
-
-@media (max-width: 460px) {
-  .burger-media,
-  h1 {
-    font-size: 100px;
-    line-height: 80px;
-    padding-left: 0px;
-    margin: 0px;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 460px) {
-  .burger-media,
-  h1 {
-    font-size: 100px;
-    line-height: 80px;
-    padding-left: 0px;
-    margin: 0px;
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: 460px) {
-  .container-p,
-  .container-p-header,
-  .container-p-last,
-  .container-ligature-first,
-  .container-ligature-second {
-    padding-top: 0px;
-    margin-left: 10px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .our-receipes-container {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-@media (max-width: 900px) {
-  .main-logo {
-    align-items: center;
-  }
-}
-
-@media (min-width: 360px) {
-  .container-reservation {
-    padding-left: 0px;
-    align-items: center;
-    padding-bottom: 0px;
-    padding-top: 30px;
-  }
-}
-
-@media (max-width: 900px) {
-  .title-left {
-    padding-left: 0px;
-    margin: 10px;
-  }
-}
-
-@media (max-width: 460px) {
-  .container-ligature-first {
-    text-align: left;
-    margin: 5px;
-    padding: 0px;
-    width: 380px;
-  }
-}
-
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 88px;
-    line-height: 70px;
-    letter-spacing: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .h2 {
-    font-size: 88px;
-    line-height: 70px;
-    letter-spacing: 0;
-  }
-}
-
-@media (min-width: 300px) {
-  .header-logo {
-    max-width: 316px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .header-logo {
-    max-width: 604px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .header-logo {
-    padding-bottom: 44px;
-    padding-top: 44px;
-  }
-}
-
-@media (max-width: 660px) {
-  nav,
-  ul {
-    visibility: hidden;
-  }
-}
-
-@media (max-width: 460px) {
-  .nav-header {
-    max-height: 60px;
-  }
-}
-
-@media (max-width: 460px) {
-  .h2,
-  .img-illustration,
-  .title-left {
-    padding-left: 0px;
-    margin-left: 5px;
-  }
-}
-
-@media (max-width: 460px) {
-  .container-schedule,
-  .schedule-time {
-    padding: 10px;
-    flex-direction: row;
-  }
-}
-
-@media (max-width: 460px) {
-  .container-footer-style {
-    padding: 0px;
-    margin: 10px;
-    flex-direction: row;
-  }
-}
-
-@media (max-width: 900px) {
-  .title-left-second,
-  .container-p {
-    padding-top: 0px;
-    padding-left: 10px;
-    margin: 0px;
-  }
-}
-
-@media (max-width: 900px) {
-  .title-left-second,
-  .container-p {
-    padding-top: 0px;
-    padding-left: 10px;
-    margin: 0px;
+  .container-p-last {
+    margin-top: 0px;
   }
 }
