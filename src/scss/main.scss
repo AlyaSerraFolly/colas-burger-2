@@ -79,7 +79,6 @@ video {
 }
 
 .ligature-dark {
-  padding-top: 80px;
 }
 
 .text-information {
@@ -112,6 +111,7 @@ video {
 .title-left {
   /* padding-left: 45px; */
   margin: 20px;
+  margin-bottom: 0px;
 }
 
 .title-left-first {
@@ -807,8 +807,7 @@ h3 {
 }
 
 @media (max-width: 1200px) {
-  .burger-media,
-  .ligature-dark {
+  .burger-media {
     margin-bottom: 0px;
     padding-top: 0px;
   }
@@ -866,5 +865,25 @@ h3 {
 @media (min-width: 767px) {
   .ligature-super {
     margin-top: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ligature-dark {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 767px) {
+  .ligature-dark {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 990px) {
+  .nav-header a,
+  .nav-logo,
+  .container-nav-flex .container-icon {
+    visibility: hidden;
   }
 }
