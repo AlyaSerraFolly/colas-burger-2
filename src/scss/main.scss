@@ -180,6 +180,7 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 15px;
 }
 
 .img-illustration {
@@ -579,6 +580,7 @@ h2 {
 
 .recipes-image {
   height: 228px;
+  width: 160px;
 }
 
 .cheese-burger {
@@ -788,10 +790,12 @@ h3 {
   }
 }
 
-@media (max-width: 467px) {
+@media (max-width: 350px) {
   .title-left-first,
-  .title-left-second {
+  .title-left-second,
+  .text-information {
     width: 250px;
+    margin-left: 0px;
   }
 }
 
@@ -800,7 +804,7 @@ h3 {
   .title-left-second,
   .container-p,
   .container-p-last {
-    padding-left: 30px;
+    padding-left: 20px;
     padding-top: 0px;
     margin-top: 0px;
   }
@@ -816,12 +820,15 @@ h3 {
 @media (max-width: 1200px) {
   .img-illustration {
     width: 400px;
+    margin-left: 0;
   }
 }
 
 @media (max-width: 767px) {
   .main-logo {
     width: 400px;
+    padding: 6px;
+    margin-top: 0;
   }
 }
 
@@ -834,6 +841,13 @@ h3 {
     justify-content: center;
     align-items: center;
     display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-schedule {
+    margin: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -881,9 +895,40 @@ h3 {
 }
 
 @media (max-width: 990px) {
-  .nav-header a,
   .nav-logo,
+  .nav-header-container,
+  .nav-header-all {
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 990px) {
+  .nav-header a,
   .container-nav-flex .container-icon {
     visibility: hidden;
+  }
+}
+
+@media (max-width: 2500px) {
+  .burger-nav-header {
+    visibility: hidden;
+    width: 0px;
+  }
+}
+
+@media (max-width: 990px) {
+  .burger-nav-header {
+    visibility: visible;
+    width: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .burger-nav-header {
+    visibility: visible;
+    margin-left: 130px;
+    display: flex;
   }
 }
