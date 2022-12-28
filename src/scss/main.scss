@@ -78,9 +78,6 @@ video {
   font-size: 38px;
 }
 
-.ligature-dark {
-}
-
 .text-information {
   font-family: "AgrandirRegular";
   font-size: 18px;
@@ -139,6 +136,16 @@ video {
 
 .food-truck {
   margin-left: 45px;
+}
+
+.nav-header-all {
+  position: relative;
+}
+
+.container-icon {
+  position: absolute;
+  top: 23px;
+  right: -50px;
 }
 /* --------------------HEADER------------------ */
 
@@ -216,12 +223,6 @@ header {
   width: auto;
 }
 
-.container-icon {
-  position: fixed;
-  top: 35px;
-  right: 220px;
-}
-
 .container-icon i {
   padding-left: 30px;
   vertical-align: bottom;
@@ -249,6 +250,7 @@ header {
   justify-content: center;
   background-color: var(--pink);
   border-bottom: black 1px solid;
+  overflow: hidden;
 }
 
 .nav-header a {
@@ -790,12 +792,13 @@ h3 {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 330px) {
   .title-left-first,
   .title-left-second,
   .text-information {
     width: 250px;
     margin-left: 0px;
+    overflow: hidden;
   }
 }
 
@@ -896,11 +899,30 @@ h3 {
 
 @media (max-width: 990px) {
   .nav-logo,
-  .nav-header-container,
-  .nav-header-all {
+  .nav-header-container {
     justify-content: center;
     display: flex;
     padding: 0px;
+    max-width: auto;
+  }
+}
+
+@media (max-width: 990px) {
+  .nav-header-all {
+    justify-content: flex-end;
+    display: flex;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-header-all .nav-logo {
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 295px;
+    width: 110px;
   }
 }
 
@@ -928,7 +950,17 @@ h3 {
 @media (max-width: 767px) {
   .burger-nav-header {
     visibility: visible;
-    margin-left: 130px;
     display: flex;
+  }
+}
+@media (max-width: 1200px) {
+  .container-icon {
+    right: -15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-icon i {
+    padding-left: 4px;
   }
 }
